@@ -1,12 +1,12 @@
 {
-  "name": "grokking-graphql-env",
+  "name": "ggql-boilerplate",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "nodemon lib/index.js --exec babel-node --presets es2015,stage-2",
     "build": "babel lib -d dist",
     "serve": "node dist/index.js",
-    "test": "xo"
+    "test": "eslint lib/**"
   },
   "license": "MIT",
   "author": "Tyler Reckart <tyler@tylerreckart.com>",
@@ -16,19 +16,13 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.24.1",
     "casual": "^1.5.14",
-    "colors": "^1.1.2",
     "eslint": "^4.0.0",
-    "eslint-config-airbnb": "^15.0.1",
-    "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-react": "^7.1.0",
     "express": "^4.15.3",
     "express-graphql": "^0.6.6",
     "graphql": "^0.10.1",
     "graphql-tools": "^1.0.0",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
-    "nodemon": "^1.11.0",
-    "xo": "^0.18.2"
+    "nodemon": "^1.11.0"
   }
 }
