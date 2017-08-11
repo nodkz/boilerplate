@@ -1,15 +1,21 @@
 {
-    "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module"
-    },
-    "rules": {
-        "semi": 2,
-        "indent": ["error", 2],
-        "object-curly-spacing": ["error", "always"]
-    },
-    "env": {
-        "browser": true,
-        "node": true
-    }
+  "extends": [
+    "airbnb-base",
+    "prettier"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "prettier/prettier": ["error", {
+      "printWidth": 100,
+      "singleQuote": true,
+      "trailingComma": "es5",
+    }],
+    "import/prefer-default-export": 0,
+  },
+  "env": {
+    "node": true
+  },
+  "plugins": [
+    "prettier"
+  ]
 }
