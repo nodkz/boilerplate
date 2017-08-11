@@ -1,5 +1,7 @@
 import { find } from 'lodash';
 
+const users = [];
+
 // http://graphql.org/learn/execution/#root-fields-resolvers
 const resolvers = {
   Query: {
