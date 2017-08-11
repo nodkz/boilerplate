@@ -9,9 +9,15 @@ const app = express();
 const PORT = 4000;
 
 // Define our routes
-app.use('/graphql', graphqlHTTP({
-  schema,
-  graphiql: true
-}));
+app.use(
+  '/graphql',
+  graphqlHTTP({
+    schema,
+    graphiql: true,
+  })
+);
 
-app.listen(PORT, () => console.log(`GraphQL server up and running on localhost:4000/graphql`));
+app.listen(PORT, () => {
+  // eslint-disable-next-line
+  console.log(`GraphQL server up and running on localhost:4000/graphql`);
+});
